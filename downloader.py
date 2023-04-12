@@ -33,19 +33,7 @@ for i, x in enumerate(soup.find_all('a', attrs={'title':'Triangulated meshes'}))
     print(req.ok)
 
     z = zipfile.ZipFile(io.BytesIO(r.content))
-    z.extractall("/home/robot/Downloads/kit_models/{}".format(i))
+    # z.extractall("/home/robot/Downloads/kit_models/{}".format(i))
+    z.extractall("destination/for/your/environment/kit_models/{}".format(i))
 
     # requests.get(download_base_url+x.get('href'))
-
-# for i in range (3, 292, 2):
-    # print(i)
-# res = soup.select('tr > td > a')
-# print(res)
-# print(len(res))
-# for r in res:
-#     if len(r.text) > 0:
-#         print(r.text)
-    # print(r.get('href'))
-
-# json_res = res.json()
-# print(json_res)
