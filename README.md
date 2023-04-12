@@ -1,2 +1,2 @@
 # KIT-downloader
-Download KIT object mesh models vai code.
+Download KIT object mesh models via code.
